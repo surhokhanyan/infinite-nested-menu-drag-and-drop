@@ -1,0 +1,63 @@
+//Variables
+$red: #EE4036;
+$blue:#262261;
+$orange: #FAAF40;
+$white: #fff;
+$cyan: #3CAEA3;
+
+//For size
+@mixin size($wdth, $hdth){
+    width: $wdth;
+    height: $hdth;
+}
+//Flexboxes
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin flexBetween{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@mixin flexEvenly{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+@mixin flexEnd{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+@mixin flDownCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@mixin flDownBetween{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+@mixin flDownEvenly{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+@mixin flDownAround{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+@mixin flDownEnd{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}

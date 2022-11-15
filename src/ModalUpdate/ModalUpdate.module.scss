@@ -1,0 +1,59 @@
+@import "../Mixins";
+
+.update{
+    width: 400px;
+    height: 200px;
+    @include flDownEvenly();
+    border-radius: 0 0 20px 20px;
+    background-color: $orange;
+    position: absolute;
+    left: 500px;
+    top: 00px;
+    z-index: 999;
+    .close{
+        width: 30px;
+        height: 30px;
+        @include flexCenter();
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        background-color: $red;
+        svg{
+            width: 20px;
+            height: 20px;
+            color: $white;
+        }
+    }
+    input{
+        width: 340px;
+        height: 50px;
+        border: 2px solid $orange;
+        outline: none;
+        padding-left: 20px;
+        border-radius: 5px 15px 5px 15px;
+        color: $blue;
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .save{
+        width: 200px !important;
+        height: 40px !important;
+        border: none;
+        border-radius: 20px 5px 20px 5px;
+        background-color: $blue !important;
+        font-family: 'Roboto', sans-serif;
+        color: $white;
+        font-size: 14px;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: .4s ease-in;
+        &:hover{
+            background-color: $red !important;
+            color: $white;
+        }
+    }
+}
